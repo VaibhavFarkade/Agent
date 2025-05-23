@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini WhatsApp Agent</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* For a subtle background pattern like WhatsApp */
+    body {
+      background-color: #e5ddd5; /* WhatsApp-like background color */
+    }
+    .chat-bg-pattern {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAESCAYAAABqP+lSAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMC8xMi8xN+TS+bUAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABr0lEQVR4nO3QwQkAIAwEwXCiAXXBwXQCJe1NCxN2hruVR8L/BRAABAQCAQEBAYFAQEBAQCgQEBAQEAgEBAQEBIIBAYFAQEBAQCAQEBASCgQEBAQEggEBAQGBQEBAQCAQEAoEBAQEBIIBAYFAQEBAQCAQEAoEBAQEggEBAQGBQEBAQCAQEAoEBAQEBAYFAQEBAQCAQEAoEBAQEBIIBAYFAQEBAQCAQEAoEBAQEggEBAQGBQEBAQCAQEAoEBAQEBAYFAQEBAQCAQEAoEBAQEBIIBAYFAQEBAQCAQEAoEBAQEBAYFAQEBAQCAQEAoEBAQEggEBAQGBQEBAQCAQEAoEBAQEBAYFAQEBAQCAQEAoEBAQEBIIBAYFAQEBAQCAQEAoEBAQEggEBAQGBQEBAQCAQEAoEBAQEBAYFAQEBAQCAQEAoEBAQEBIIBAYFAQEBAQCAQEAoEBAQEggEBAQGBQEBAQCAQEAoEBAQEBAYFAQEBAQCAQEAoEBAQEBIIBAYFAQEBAQCAQEAoEBAQEBAYFAQEBAQCAQEAoEBAQEggEBAQGBQEBAQCAQEBAoEBAQEBAYFAQEBAQCAQECoQAAEBH5aGUxFAAAAAElFTkSuQmCC');
+        background-repeat: repeat;
+        opacity: 0.06; /* Subtle pattern */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+    .chat-content {
+        position: relative;
+        z-index: 1;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.0.1",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
+<link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
